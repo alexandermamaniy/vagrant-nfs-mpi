@@ -100,7 +100,9 @@ python3 client.py
 
 
 ## MPI Test on machines
-The configuration in `Vagrantfile` commands to the installation of the MPICH on the VMs. After installation, you can have the MPI codes in shared directory (which is already shared by NFS). Note that clients should mount this directory in their local machines. **The name of the direcotry should be same for all VMs.** The MPI codes can be easily run through the machines only from server machine. **Server should ssh to all Clients before executing MPI codes**, otherwise there will be an error indicating `Host key verification failed`.
+The configuration in `Vagrantfile` commands to the installation of the MPICH on the VMs. After installation, you can have the MPI codes in shared directory (which is already shared by NFS). Note that clients should mount this directory in their local machines. **The name of the direcotry should be same for all VMs.** The MPI codes can be easily run through the machines only from server machine. **Server should call ssh connections to all Clients before executing MPI codes**, otherwise there will be an error indicating `Host key verification failed`.
+
+
 
 ``On server VM:``
 ```shell
